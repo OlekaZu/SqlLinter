@@ -1,0 +1,1 @@
+Ways for sql lintering
