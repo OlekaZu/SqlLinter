@@ -25,9 +25,6 @@ import { Codemirror } from "vue-codemirror";
 import { sql, PostgreSQL } from "@codemirror/lang-sql";
 import { oneDark } from "@codemirror/theme-one-dark";
 
-// theme css
-// import "codemirror/theme/solarized.css";
-
 const props = defineProps<{
   code: string;
 }>();

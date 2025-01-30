@@ -11,7 +11,11 @@
   "dependencies": {
     "@codemirror/lang-sql": "^6.8.0",
     "@codemirror/theme-one-dark": "^6.1.2",
+    "@guolao/vue-monaco-editor": "^1.5.4",
     "codemirror": "^6.0.1",
+    "monaco-editor": "^0.52.2",
+    "monaco-sql-languages": "^0.12.2",
+    "node-sql-parser": "^5.3.6",
     "vue": "^3.5.13",
     "vue-codemirror": "^6.1.1"
   },
