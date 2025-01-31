@@ -78,16 +78,18 @@ const onChange = (newCode: string) => {
 
 function validateAndHighlLight(newCode: string) {
   const errors = validateSql(newCode);
-  console.log(errors);
+  // console.log(errors);
   const model = editorRef.value?.getModel();
-  console.log(model);
+  // console.log(model);
   monaco.editor.setModelMarkers(model, "sql", errors);
   const markers = monaco.editor.getModelMarkers(model);
-  console.log(markers);
+  // console.log(markers);
 }
 
 function validateSql(newCode: string) {
   const errors = pgsql.validate(newCode);
+  // console.log(errors);
+
   const errorsRequered = errors.map((item) => ({
     message: item.message,
     severity: monaco.MarkerSeverity.Error,
@@ -105,9 +107,9 @@ function formatCode() {
 }
 
 onMounted(() => {
-  //   const parser = new Parser();
-  //   const ast = parser.astify(code.value, parserOpt);
-  //   console.log(ast);
+  // const parser = new Parser();
+  // const ast = parser.astify(code.value, parserOpt);
+  // console.log(ast);
 });
 </script>
 

@@ -3,7 +3,7 @@
     <SqlEditor :code="code" />
   </div> -->
   <div>
-    <NewMonacoEditor />
+    <MonacoEditor />
   </div>
 </template>
 
@@ -12,4 +12,5 @@
 import SqlEditor from "./components/SqlEditor.vue";
 import MonacoEditor from "./components/MonacoEditor.vue";
 import NewMonacoEditor from "./components/NewMonacoEditor.vue";
+import NewCodemirrorEditor from "./components/NewCodemirrorEditor.vue";
 </script>
