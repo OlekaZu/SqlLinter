@@ -3,7 +3,7 @@
     <SqlEditor :code="code" />
   </div> -->
   <div>
-    <MonacoEditor />
+    <NewMonacoEditor />
   </div>
 </template>
 
